@@ -3,30 +3,30 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 32px;
+  --header-height: 64px;
 
   /*========== Colors ==========*/
   /* Color mode HSL(hue, saturation, lightness) */
   --first-color: hsl(176, 88%, 27%);
-  --first-color-alt: ;
-  --second-color: ;
-  --title-color: ;
-  --text-color: ;
-  --text-color-light: ;
-  --body-color: ;
-  --container-color: ;
-  --border-color: ;
-  --border-color-alt: ;
+  --first-color-alt: hsl(129, 44%, 94%);
+  --second-color: hsl(34, 94%, 87%);
+  --title-color: hsl(0, 0%, 13%);
+  --text-color: hsl(154, 13%, 32%);
+  --text-color-light: hsl(60, 1%, 56%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 93%);
+  --border-color: hsl(129, 36%, 85%);
+  --border-color-alt: hsl(113, 15%, 90%);
 
   /*========== Font and typography ==========*/
   /* .5rem = 8px | 1rem = 16px ... */
-  --body-font: ;
-  --second-font: ;
-  --big-font-size: ;
-  --h1-font-size: ;
-  --h2-font-size: ;
-  --h3-font-size: ;
-  --h4-font-size: ;
+  --body-font: 'Lato', sans-serif;
+  --second-font: 'League Spartan', sans-serif;
+  --big-font-size: 56px;
+  --h1-font-size: 44px;
+  --h2-font-size: 32px;
+  --h3-font-size: 28px;
+  --h4-font-size: 22px;
   --large-font-size: ;
   --normal-font-size: ;
   --small-font-size: ;
