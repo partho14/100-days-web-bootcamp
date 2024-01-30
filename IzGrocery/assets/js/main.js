@@ -8,6 +8,19 @@
 
 /*=============== IMAGE GALLERY ===============*/
 
+function imageGallery(){
+  const mainImg = document.querySelector('.details__img'),
+  smallImg = document.querySelectorAll('.details__small-img');
+
+  smallImg.forEach((img) => {
+    img.addEventListener('click', function(){
+      mainImg.src = this.src
+    })
+  })
+}
+
+imageGallery();
+
 /*=============== SWIPER CATEGORIES ===============*/
 var swiperCategories = new Swiper(".categories__container", {
     spaceBetween: 24,
