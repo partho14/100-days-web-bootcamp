@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `sms_classes` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(40) NOT NULL,
-  `section` varchar(255) NOT NULL,
+  `section` varchar(40) NOT NULL,
   `teacher_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

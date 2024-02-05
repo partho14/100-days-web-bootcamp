@@ -91,7 +91,7 @@ class School extends Dbconfig {
 		}
 		return $errorMessage;		
 	}	
-	public function listClasses(){		
+	public function listClasses(){	
 		$sqlQuery = "SELECT c.id, c.name, s.section, t.teacher 
 			FROM ".$this->classesTable." as c
 			LEFT JOIN ".$this->sectionsTable." as s ON c.section = s.section_id
@@ -110,7 +110,9 @@ class School extends Dbconfig {
 		if($_POST["length"] != -1){
 			$sqlQuery .= 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
 		}	
-		$result = mysqli_query($this->dbConnect, $sqlQuery);
+		echo $sqlQuery;
+		$mysqli = new mysqli("localhost","root","root","sms_project");
+		$result = $mysqli -> query($sqlQuery);
 		$numRows = mysqli_num_rows($result);
 		$classesData = array();	
 		while( $classes = mysqli_fetch_assoc($result) ) {		
@@ -130,6 +132,7 @@ class School extends Dbconfig {
 			"data"    			=> 	$classesData
 		);
 		echo json_encode($output);
+		exit();
 	}
 	public function addClass () {
 		if($_POST["cname"]) {

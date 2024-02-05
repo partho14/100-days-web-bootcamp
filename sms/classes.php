@@ -29,7 +29,7 @@ include('inc/header.php');
 					</div>
 				</div>
 				<table id="classList" class="table table-bordered table-striped">
-					<thead>
+					<thead>	
 						<tr>
 							<th>ID</th>
 							<th>Name</th>	
