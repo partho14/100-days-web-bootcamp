@@ -109,6 +109,11 @@ button,textarea,input{
   outline: none;
 }
 
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 .container{
@@ -162,6 +167,21 @@ button,textarea,input{
 
 .section__title span{
   color: var(--first-color);
+}
+
+.form{
+  row-gap: 16px;
+}
+
+.form__group{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.textarea{
+  height: 200px;
+  padding-block: 16px;
+  resize: none;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -1086,6 +1106,98 @@ button,textarea,input{
 }
 
 /*=============== DETAILS INFO & REVIEWS ===============*/
+
+.detail__tabs{
+  display: flex;
+  column-gap: 28px;
+  margin-bottom: 48px;
+}
+
+.detail__tab{
+  font-family: var(--second-font);
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-600);
+  cursor: pointer;
+}
+
+.detail__tab.active-tab{
+  color: var(--first-color);
+}
+
+.details__tab-content:not(.active-tab){
+  display: none;
+}
+
+.info__table tr th,
+.info__table tr td{
+  border: 1px solid var(--border-color-alt);
+  padding: 10px 20px;
+}
+
+.info__table tr th{
+  font-weight: var(--weight-500);
+  text-align: left;
+}
+
+.info__table tr td{
+  color: var(--text-color-light);
+}
+
+.reviews__container{
+  padding-bottom: 48px;
+  row-gap:  20px;
+}
+
+.review__single{
+  border-bottom: 1px solid var(--border-color-alt);
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 24px;
+}
+
+.review__single:last-child{
+  padding-bottom: 48px;
+}
+
+.review__img{
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.review__title{
+  font-size: var(--tiny-font-size);
+}
+
+.review__data{
+  width: calc(100% - 94px);
+}
+
+.review__description{
+  margin-bottom: 8px;
+}
+
+.review__rating{
+  color: hsl(42, 100%, 50%);
+  margin-bottom: 4px;
+}
+
+.review__rating,
+.review__date{
+  font-size: var(--small-font-size);
+}
+
+.review__form-title{
+  font-size: var(--large-font-size);
+  margin-bottom: 16px;
+}
+
+.rate__product{
+  margin-bottom: 32px;
+}
+
+
 
 /*=============== CART ===============*/
 
