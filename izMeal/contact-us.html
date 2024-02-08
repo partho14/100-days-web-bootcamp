@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | IzMeal</title>
+    <link rel = "stylesheet" href="styles/style.css">
+
+  </head>
+  <body>
+    <!--------Navigation part---------------> 
+    <div class = "container">
+        <div class = "navbar">
+            <div class = "logo">
+                <a href = "index.html"><img src = "images/logo.png" width = "125px"></a>
+            </div>
+            <nav>
+                <ul id = "menuItems">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "products.html">Menu</a></li>
+                <li><a href = "">About</a></li>
+                <li><a href = "contact-us.html">Contact Us</a></li>
+                <li><a href = "account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src = "images/menu.png" class = "menu-icon" onclick = "menuToggle()">
+            </div>
+    </div>
+
+    <!--------Account Page--------------->
+    <div class = "contactus-page">
+    <div class = "container">
+        <div class="row">
+            <div class="col-2">
+                <h2 class = "title">Let’s discuss the Meal Package</h2>
+            </div>
+            <div class="col-2">
+                <h2 class = "title">Get in touch with us</h2>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-2">
+                <form action="" class="form grid">
+                    <div class="form__group grid">
+                        <input type="text" placeholder="Name" class="form__input">
+                        <input type="phone" placeholder="Phone" class="form__input">
+                        <input type="email" placeholder="Email" class="form__input">
+
+                      </div>
+
+                    <textarea class="form__input textarea" placeholder="Anything For Us">
+                    </textarea>
+
+                    <div>
+                      <button class="contactus__btn">Send Message</button>
+                    </div>
+                  </form>
+            </div>
+
+            <div class = "col-2">
+
+                <div class="cnt-block-single floatCss">
+                    <div class="cnt-icon-block"><img src="images/address-icon.svg" alt=""></div>
+                    <div class="cnt-info-block">
+                      <div class="cnt-inner-block floatCss">
+                        <h4>Address</h4>
+                        <h3>House 89/2, Rode-1, Sukrabad Kacha bazar</h3>
+                        <h3>Sukrabad, Dhanmondi-32, Dhaka 1210, Bangladesh.</h3>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="cnt-block-single floatCss">
+                    <div class="cnt-icon-block"><img src="images/phone-icon.svg" alt=""></div>
+                    <div class="cnt-info-block">
+                      <div class="cnt-inner-block floatCss">
+                        <h4>Phone</h4>
+                        <h3>+8801626579447</h3>
+                        <h3>+8801779637871</h3>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="cnt-block-single floatCss">
+                    <div class="cnt-icon-block"><img src="images/clock-icon.svg" alt=""></div>
+                    <div class="cnt-info-block">
+                      <div class="cnt-inner-block floatCss">
+                        <h4>Working Hours</h4>
+                        <h3> Saturday - Thursday - 10am to 10pm</h3>
+                        <h3>Firday - Closed</h3>
+                      </div>
+                    </div>
+                </div>
+          
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!--------Footer--------------->
+
+    <div class = "footer">
+      <div class = "container">
+        <div class = "row">
+
+          <div class = "footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android Mobile Phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png">
+            </div>
+          </div>
+
+          <div class = "footer-col-2">
+            <img src = "images/logo-white.png">
+            <p>Turning hunger into happiness no need to cook, Your cravings called, we will answered with a delivery.</p>
+          </div>
+          
+          <div class = "footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Privacy Policy</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+
+          <div class = "footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <p class = "copyright">Copyright 2024 -IzMeal Company Ltd</p>
+
+      </div>
+    </div>
+
+    <!--------JS For Toggole Menu---------------> 
+    <script>
+      var MenuItems = document.getElementById("menuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menuToggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px";
+        }else{
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

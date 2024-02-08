@@ -1,3 +1,69 @@
+/*=============== GOOGLE FONTS ===============*/
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 64px;
+
+  /*========== Colors ==========*/
+  /* Color mode HSL(hue, saturation, lightness) */
+  --first-color: hsl(176, 88%, 27%);
+  --first-color-alt: hsl(129, 44%, 94%);
+  --second-color: hsl(34, 94%, 87%);
+  --title-color: hsl(0, 0%, 13%);
+  --text-color: hsl(154, 13%, 32%);
+  --text-color-light: hsl(60, 1%, 56%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 93%);
+  --border-color: hsl(129, 36%, 85%);
+  --border-color-alt: hsl(113, 15%, 90%);
+  --light-pink-color: hsl(341, 100%, 73%);
+  --light-green-color: hsl(155, 20%, 67%);
+  --light-orange-color: hsl(24, 100%, 73%);
+  --light-blue-color: hsl(202, 53%, 76%);
+
+  /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: 'Lato', sans-serif;
+  --second-font: 'Spartan', sans-serif;
+  --big-font-size: 56px;
+  --h1-font-size: 44px;
+  --h2-font-size: 32px;
+  --h3-font-size: 28px;
+  --h4-font-size: 22px;
+  --large-font-size: 18px;
+  --normal-font-size: 16px;
+  --small-font-size: 14px;
+  --smaller-font-size: 12px;
+  --tiny-font-size: 11px;
+
+  /*========== Font weight ==========*/
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  /*========== Transition ==========*/
+  --transition: cubic-bezier(0, 0, 0.05, 1);
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1200px) {
+  :root {
+    --big-font-size: ;
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --h4-font-size: ;
+    --large-font-size: ;
+    --normal-font-size: ;
+    --small-font-size: ;
+    --smaller-font-size: ;
+    --tiny-font-size: ;
+  }
+}
+
+/*=============== BASE ===============*/
+
 *{
     margin: 0;
     padding: 0;
@@ -38,12 +104,17 @@ p{
     color: #555;
 }
 
+/*=============== REUSABLE CSS CLASSES ===============*/
+
 .container{
-    max-width: 1320px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    max-width: 1600px;
+    margin-inline: auto;
+    padding-inline: 12px;
 }
+
+.section{
+    padding-block: 32px;
+  }
 
 .row{
     display: flex;
@@ -55,11 +126,12 @@ p{
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
+    align-items: center;
+    padding: 0px 50px;
 }
 
-.col-2 img{
+.col-2 .img{
     max-width: 100%;
-    padding: 50px 0;
     align-items: center;
 }
 
@@ -175,33 +247,59 @@ small{
     color: #555;
 }
 
-/*---------- card design------------*/
+/*=============== CATEGORIES ===============*/
 
+.categories{
+    overflow: hidden;
+}
+.category__item{
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 10px 10px 20px;
+    border-radius: 20px;
+}
+  
+.category__img{
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+  
+.category__title{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+}
+
+/*---------- card design------------*/
 
 .card {
     width: 100%;
     margin: 20px auto;
-    border: 1px solid #ccc;
+    border: 1px solid (--border-color);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .card img {
+}
+
+.card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-  }
-  .card-content {
+}
+
+.card-content {
     padding: 20px;
-  }
-  .item-list {
+}
+
+.item-list {
     list-style: none;
     padding: 0;
-  }
-  .item-list li {
+}
+
+.item-list li {
     margin-bottom: 5px;
-  }
-  .details-btn {
+}
+
+.details-btn {
     display: block;
     width: 100%;
     padding: 10px 0;
@@ -213,51 +311,13 @@ small{
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  .details-btn:hover {
+}
+
+.details-btn:hover {
     background-color: #563434;
-  }
-
-/*---------- testimonial------------*/
-
-.testimonial{
-    padding-top: 100px;
 }
 
-.testimonial .col-3{
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-
-.testimonial .col-3 img{
-    width: 50px;
-    margin-top: 20px;
-    border-radius: 50%;
-}
-
-.testimonial .col-3:hover{
-    transform: translateY(-10px);
-}
-
-.fa.fa-quote-left{
-    font-size: 34px;
-    color: #ff523b;
-}
-
-.col-3 p{
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
-}
-
-.testimonial .col-3 h3{
-    font-weight: 600;
-    color: #555;
-    font-size: 16px;
-}
+/*=============== Brands ===============*/
 
 .brands{
     margin: 100px auto;
@@ -276,7 +336,95 @@ small{
     filter: grayscale(0);
 }
 
-/*----------------footer--------------*/
+/*=============== Swiper testimonial ===============*/
+
+.small-containers{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.testimonials{
+    overflow: hidden;
+}
+
+.testimonials__item{
+    text-align: center;
+    padding: 10px 10px 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 20px;
+} 
+
+.testimonials .col-3{
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonials .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonials .col-3:hover{
+    transform: translateY(-10px);
+}
+
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonials .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+  
+  /* Swiper class */
+  
+.swiper{
+    overflow: initial;
+}
+  
+.swiper-button-next, .swiper-button-prev{
+    top: -30px;
+    background-color: var(--first-color-alt);
+    border: 1px solid var(--border-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+  
+.swiper-button-prev{
+    left: initial;
+    right: 40px;
+}
+  
+.swiper-button-next{
+    right: 0;
+}
+  
+.swiper-button-next::after, 
+.swiper-button-prev::after{
+    content: '';
+}
+
+/*=============== Footer ===============*/
 
 .footer{
     background: #000;
@@ -347,6 +495,79 @@ ul{
     margin-left: 20px;
     display: none;
 }
+
+/*=============== About Us Screen ===============*/
+
+.contactus-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff, #cba8a8);
+}
+
+.grid{
+    display: grid;
+    gap: 24px;
+}
+
+.form{
+    row-gap: 14px;
+}
+
+.form__input{
+    border: 1px solid var(--border-color-alt);
+    padding-inline: 16px;
+    height: 45px;
+    border-radius: 4px;
+    font-size: var(--small-font-size);
+}
+  
+.textarea{
+    height: 200px;
+    padding-block: 16px;
+    resize: none;
+}
+
+.contactus__btn{
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #ff523b;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cnt-block-single
+{
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 25px 25px 25px 25px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.floatCss
+{
+  width: 100%;
+  float: left;
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.cnt-inner-block{
+    width: 100%;
+    display: block;
+}
+
 
 
 /*-------------media query for menu-----------------------*/

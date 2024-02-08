@@ -2,387 +2,323 @@
 <html>
   <head>
     <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <title></title>
-        <meta name = "description" content="">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
-        <link rel = "stylesheet" href="">
-        <title>IzMeal | Easy your life</title>
-        <link rel = "stylesheet" href="styles/style.css">
-        <link rel = "preconnect" href="https://fonts.googleapis.com">
-        <link rel = "preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IzMeal | Easy your life</title>
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--=============== FLATICON ===============-->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel = "stylesheet" href="styles/style.css">
+
   </head>
   <body>
-   <div class = "header">
-    <div class = "container">
-      <div class = "navbar">
-        <div class = "logo">
-          <a href = "index.html"><img src = "images/logo.png" width = "125px"></a>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <div class = "header">
+      <div class = "container">
+        <div class = "navbar">
+          <div class = "logo">
+            <a href = "index.html"><img src = "images/logo.png" width = "125px"></a>
+          </div>
+          <nav>
+            <ul id = "menuItems">
+              <li><a href = "index.html">Home</a></li>
+              <li><a href = "products.html">Menu</a></li>
+              <li><a href = "">About</a></li>
+              <li><a href = "contact-us.html">Contact Us</a></li>
+              <li><a href = "account.html">Account</a></li>
+            </ul>
+          </nav>
+          <img src = "images/menu.png" class = "menu-icon" onclick = "menuToggle()">
         </div>
-        <nav>
-          <ul id = "menuItems">
-            <li><a href = "index.html">Home</a></li>
-            <li><a href = "products.html">Menu</a></li>
-            <li><a href = "">About</a></li>
-            <li><a href = "">Contact Us</a></li>
-            <li><a href = "account.html">Account</a></li>
-          </ul>
-        </nav>
-        <img src = "images/menu.png" class = "menu-icon" onclick = "menuToggle()">
-      </div>
-      <div class = "row">
-        <div class = "col-2">
-          <h1>Give Your Daily Meal<br> A New Style!</h1>
-          <p>Good food is the foundation of genuine happiness. Every meal is a journey, a story of flavors waiting to be explored. Savor each bite, for in the simple act of dining, we find joy in the everyday moments of life.</p>
-          <a href = "" class = "btn">Explore Now &#8594;</a>
-        </div>
-        <div class = "col-2">
-          <img src = "images/cook_image.png">
-        </div>
-      </div>
-     </div>
-   </div>
-
-   <!--------featured categories--------------->
-
-   <div class = "categories">
-    <div class="small-container">
-      <div class = "row">
-        <div class="col-3">
-          <img src = "images/category-1.jpg">
-        </div>
-        <div class="col-3">
-          <img src = "images/category-2.jpg">
-        </div>
-        <div class="col-3">
-          <img src = "images/category-3.jpg">
+        <div class = "row">
+          <div class = "col-2">
+            <h1>Give Your Daily Meal<br> A New Style!</h1>
+            <p>Good food is the foundation of genuine happiness. Every meal is a journey, a story of flavors waiting to be explored. From the chef's hands to your doorstep, a journey of taste. The only decision you should make is what to order.</p>
+            <a href = "" class = "btn">Explore Now &#8594;</a>
+          </div>
+          <div class = "col-2">
+            <img src = "images/cook_image.png">
+          </div>
         </div>
       </div>
     </div>
-   </div>
+
+    <!--------featured Services--------------->
+
+    <div class = "categories">
+      <h2 class = "title">Our Services</h2>
+      <div class="small-container">
+        <div class = "row">
+          <div class="col-3">
+            <div class="category__item">
+              <img src="images/category-1.jpg" alt="" class="category__img">
+              <h3 class="category__title">Corporate Lunch</h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="category__item">
+              <img src="images/category-2.jpg" alt="" class="category__img">
+              <h3 class="category__title">Home Meal Delivery</h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="category__item">
+              <img src="images/category-3.jpg" alt="" class="category__img">
+              <h3 class="category__title">School/Colleg Lunch</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--------featured menus---------------> 
 
+    <div class = "small-container">
+
+      <h2 class = "title">Popular Menus</h2>
+      <div class = "row">
+        
+        <div class="col-4">
+          <div class="card">
+            <img src="images/popular-2.jpg" alt="Meal Photo">
+            <div class="card-content">
+              <h4>Package Goosebumps</h4>
+              <div class = "rating">
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+              </div>
+              <p>BDT 85 per meal</p>
+              <a href="#" class="details-btn">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-4">
+          <div class="card">
+            <img src="images/popular-1.jpg" alt="Meal Photo">
+            <div class="card-content">
+              <h4>Package Luffy</h4>
+              <div class = "rating">
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+              </div>
+              <p>BDT 90 per meal</p>
+              <a href="#" class="details-btn">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-4">
+          <div class="card">
+            <img src="images/popular-3.jpg" alt="Meal Photo">
+            <div class="card-content">
+              <h4>Package Hotmeal</h4>
+              <div class = "rating">
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+                <i class = "fa fa-star"></i>
+              </div>
+              <p>BDT 70 per meal</p>
+              <a href="#" class="details-btn">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--------Offer---------------> 
+
+    <div class = "offer">
       <div class = "small-container">
-
-        <h2 class = "title">Popular Menus</h2>
         <div class = "row">
+          <div class = "col-2">
+            <lottie-player class="img" src="images/cookanimation.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+          </div>
+          <div class = "col-2">
+            <p>Exclusive Offer Available</p>
+            <h1>Package NewBorn</h1>
+            <small>This Package Give you 10% in every meal and delivery charges free for 10days</small>
+            <a href = "" class = "btn">Order Now &#8594</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--=============== Testimonisl ===============-->
+    <section class="testimonials small-containers section">
+      <h2 class = "title">Testimonials</h2>
+
+      <div class="testimonials__container swiper">
+        <div class="swiper-wrapper">
+
+            <div class="testimonials__item swiper-slide">
+              <div class="col-3">
+                <i class = "fa fa-quote-left"></i>
+                <p>It is a long established fact that a reader will be distracted. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors </p>
+                <div class = "rating">
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                </div>
+                <img src="images/user-1.png">
+                <h3>Sean Parker</h3>
+              </div>
+            </div>
+
+            <div class="testimonials__item swiper-slide">
+              <div class="col-3">
+                <i class = "fa fa-quote-left"></i>
+                <p>It is a long established fact that a reader will be distracted. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors </p>
+                <div class = "rating">
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                </div>
+                <img src="images/user-1.png">
+                <h3>Sean Parker</h3>
+              </div>
+            </div>
+
+            <div class="testimonials__item swiper-slide">
+              <div class="col-3">
+                <i class = "fa fa-quote-left"></i>
+                <p>It is a long established fact that a reader will be distracted. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors </p>
+                <div class = "rating">
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                </div>
+                <img src="images/user-1.png">
+                <h3>Sean Parker</h3>
+              </div>
+            </div>
+
+            <div class="testimonials__item swiper-slide">
+              <div class="col-3">
+                <i class = "fa fa-quote-left"></i>
+                <p>It is a long established fact that a reader will be distracted. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors </p>
+                <div class = "rating">
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                  <i class = "fa fa-star"></i>
+                </div>
+                <img src="images/user-1.png">
+                <h3>Sean Parker</h3>
+              </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper-button-next">
+          <i class="fi fi-rs-angle-right"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="fi fi-rs-angle-left"></i>
+        </div>
+
+      </div>
+    </section>
+
+    <!--------Customers--------------->
+    
+    <div class = "brands">
+    <div class = "small-container">
+      <h2 class = "title">Our Customer</h2>
+      <div class = "row">
+        <div class = "col-5"><img src = "images/client-1.png"></div>
+        <div class = "col-5"><img src = "images/client-2.png"></div>
+        <div class = "col-5"><img src = "images/client-3.jpeg"></div>
+        <div class = "col-5"><img src = "images/client-4.png"></div>
+      </div>
+    </div>
+    </div>
+
+    <!--------Footer--------------->
+
+    <div class = "footer">
+      <div class = "container">
+        <div class = "row">
+
+          <div class = "footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android Mobile Phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png">
+            </div>
+          </div>
+
+          <div class = "footer-col-2">
+            <img src = "images/logo-white.png">
+            <p>Turning hunger into happiness no need to cook, Your cravings called, we will answered with a delivery.</p>
+          </div>
           
-          <div class="col-4">
-            <div class="card">
-              <img src="images/popular-2.jpg" alt="Meal Photo">
-              <div class="card-content">
-                <h4>Package Goosebumps</h4>
-                <div class = "rating">
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                </div>
-                <p>BDT 85 per meal</p>
-                <a href="#" class="details-btn">Details</a>
-              </div>
-            </div>
+          <div class = "footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Privacy Policy</li>
+              <li>About Us</li>
+            </ul>
           </div>
 
-          <div class = "col-4">
-            <div class="card">
-              <img src="images/popular-1.jpg" alt="Meal Photo">
-              <div class="card-content">
-                <h4>Package Luffy</h4>
-                <div class = "rating">
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                </div>
-                <p>BDT 90 per meal</p>
-                <a href="#" class="details-btn">Details</a>
-              </div>
-            </div>
+          <div class = "footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
           </div>
 
-          <div class = "col-4">
-            <div class="card">
-              <img src="images/popular-3.jpg" alt="Meal Photo">
-              <div class="card-content">
-                <h4>Package Hotmeal</h4>
-                <div class = "rating">
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                  <i class = "fa fa-star"></i>
-                </div>
-                <p>BDT 70 per meal</p>
-                <a href="#" class="details-btn">Details</a>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <!--------Latest Menus---------------> 
+        <hr>
 
-        <h2 class = "title">Latest Menus</h2>
-        <div class = "row">
-          <div class = "col-4">
-            <img src = "images/product-5.jpg">
-            <h4>Air jordan shoes</h4>
-            <div class = "rating">
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star-o"></i>
-            </div>
-            <p>$25.00</p>
-          </div>
-
-          <div class = "col-4">
-            <img src = "images/product-6.jpg">
-            <h4>Puma Black Tshirt</h4>
-            <div class = "rating">
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star-o"></i>
-            </div>
-            <p>$25.00</p>
-          </div>
-
-          <div class = "col-4">
-            <img src = "images/product-7.jpg">
-            <h4>Multi color shocks</h4>
-            <div class = "rating">
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star-o"></i>
-            </div>
-            <p>$25.00</p>
-          </div>
-
-          <div class = "col-4">
-            <img src = "images/product-8.jpg">
-            <h4>New Arrived Fossil Watch</h4>
-            <div class = "rating">
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star-o"></i>
-            </div>
-            <p>$25.00</p>
-          </div>
-
-          <div class = "col-4">
-            <img src = "images/product-9.jpg">
-            <h4>New Arrived Fossil Watch</h4>
-            <div class = "rating">
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star-o"></i>
-            </div>
-            <p>$25.00</p>
-          </div>
-
-          <div class = "col-4">
-            <img src = "images/product-10.jpg">
-            <h4>New Arrived Black Shoes</h4>
-            <div class = "rating">
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star-o"></i>
-            </div>
-            <p>$25.00</p>
-          </div>
-
-          <div class = "col-4">
-            <img src = "images/product-11.jpg">
-            <h4>Lotto Shoes</h4>
-            <div class = "rating">
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star-o"></i>
-            </div>
-            <p>$25.00</p>
-          </div>
-
-          <div class = "col-4">
-            <img src = "images/product-12.jpg">
-            <h4>Black Pants</h4>
-            <div class = "rating">
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star"></i>
-              <i class = "fa fa-star-o"></i>
-            </div>
-            <p>$25.00</p>
-          </div>
-        </div>
+        <p class = "copyright">Copyright 2024 -IzMeal Company Ltd</p>
 
       </div>
+    </div>
 
-      <!--------Offer---------------> 
+    <!--------JS For Toggole Menu---------------> 
+    <script>
+      var MenuItems = document.getElementById("menuItems");
+      MenuItems.style.maxHeight = "0px";
 
-      <div class = "offer">
-        <div class = "small-container">
-          <div class = "row">
-            <div class = "col-2">
-              <img src = "images/exclusive.png" class = "offer-img">
-            </div>
-            <div class = "col-2">
-              <p>Exclusively Available on RedStore</p>
-              <h1>Smart Band 4</h1>
-              <small>The Mi Smart band 4 features a 39.9% larger than Mi Band 3 AMOLED color full-touch display with adjustable brightness, so everything is clear as can be</small>
-              <a href = "" class = "btn">Buy Now &#8594</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-       <!--------Testimonisl--------------->
-       
-       <div class = "testimonial">
-        <div class="small-container">
-          <h2 class = "title">Testimonials</h2>
-          <div class="row">
-            <div class="col-3">
-              <i class = "fa fa-quote-left"></i>
-              <p>It is a long established fact that a reader will be distracted. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors </p>
-              <div class = "rating">
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-              </div>
-              <img src="images/user-1.png">
-              <h3>Sean Parker</h3>
-            </div>
-
-            <div class="col-3">
-              <i class = "fa fa-quote-left"></i>
-              <p>It is a long established fact that a reader will be distracted. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors </p>
-              <div class = "rating">
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star-half-o"></i>
-              </div>
-              <img src="images/user-2.png">
-              <h3>Sam Alex</h3>
-            </div>
-
-            <div class="col-3">
-              <i class = "fa fa-quote-left"></i>
-              <p>It is a long established fact that a reader will be distracted. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors </p>
-              <div class = "rating">
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-                <i class = "fa fa-star"></i>
-              </div>
-              <img src="images/user-3.png">
-              <h3>Julio Kuri</h3>
-            </div>
-
-          </div>
-        </div>
-       </div>
-
-       <!--------Brands--------------->
-       
-       <div class = "brands">
-        <div class = "small-container">
-          <h2 class = "title">Our Customer</h2>
-          <div class = "row">
-            <div class = "col-5"><img src = "images/logo-godrej.png"></div>
-            <div class = "col-5"><img src = "images/logo-coca-cola.png"></div>
-            <div class = "col-5"><img src = "images/logo-oppo.png"></div>
-            <div class = "col-5"><img src = "images/logo-paypal.png"></div>
-            <div class = "col-5"><img src = "images/logo-philips.png"></div>
-          </div>
-        </div>
-       </div>
-
-        <!--------Footer--------------->
-
-        <div class = "footer">
-          <div class = "container">
-            <div class = "row">
-
-              <div class = "footer-col-1">
-                <h3>Download Our App</h3>
-                <p>Download App for Android Mobile Phone.</p>
-                <div class="app-logo">
-                  <img src="images/play-store.png">
-                </div>
-              </div>
-
-              <div class = "footer-col-2">
-                <img src = "images/logo-white.png">
-                <p>Our Purpose Is To Sustainably Make Pleasure and Benefits of Sports Accessible yo the Many.</p>
-              </div>
-              
-              <div class = "footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                  <li>Coupons</li>
-                  <li>Blog Post</li>
-                  <li>Privacy Policy</li>
-                  <li>About Us</li>
-                </ul>
-              </div>
-
-              <div class = "footer-col-3">
-                <h3>Follow Us</h3>
-                <ul>
-                  <li>Facebook</li>
-                  <li>Twitter</li>
-                  <li>Instagram</li>
-                  <li>YouTube</li>
-                </ul>
-              </div>
-
-            </div>
-
-            <hr>
-
-            <p class = "copyright">Copyright 2024 -IzMeal Company Ltd</p>
-
-          </div>
-        </div>
-
-        <!--------JS For Toggole Menu---------------> 
-        <script>
-          var MenuItems = document.getElementById("menuItems");
+      function menuToggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px";
+        }else{
           MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-          function menuToggle(){
-            if(MenuItems.style.maxHeight == "0px"){
-              MenuItems.style.maxHeight = "200px";
-            }else{
-              MenuItems.style.maxHeight = "0px";
-            }
-          }
-        </script>
-
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
   </body>
 </html>
